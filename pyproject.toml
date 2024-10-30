@@ -1,0 +1,18 @@
+[project]
+name = "recapcha-solver"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.115.4",
+    "playwright-recaptcha>=0.5.1",
+    "retry-async>=0.1.4",
+]
+
+[project.scripts]
+main = "recapcha_solver.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
